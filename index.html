@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" href="images/q dyson export.png" type="image/x-icon">
 	</head>
 	<body class="is-preload">
 
@@ -24,11 +25,10 @@
 							<img src="images/businessprofilepic.png" alt="Profile Picture" height="250" />
 							<ul class="actions stacked">
 								<li><a href="https://docs.google.com/document/d/1T0qVTNEeirbQ-KwZ8NomO5zpnKR0NcrB/edit?usp=sharing&ouid=111525859312612120827&rtpof=true&sd=true" class="button big wide smooth-scroll-middle" target="_blank">See Resume</a></li>
+								<div id="slideshow" > <video id="videoPlayer" controls></video> </div>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/max-chen-lud4OaUCP4Q-unsplash.jpg" alt="" />
-						</div>
+						
 					</section>
 
 				<!-- Two -->
@@ -369,7 +369,7 @@
 							<ul class="icons">
 								<li><a href="https://github.com/t4tle" class="icon brands style2 fa-github" target="_blank"><span class="label">Instagram</span></a></li>
 								<li><a href="https://www.linkedin.com/in/joseph-o-boye/" class="icon brands style2 fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-								<li><a href="zcyberworldjoseph@gmail.com" class="icon style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+								<li><a href="walloftitans.eth.limo" class="icon style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 							</ul>
 							<!-- <p>&copy;.</p>-->
 						</div>
@@ -385,6 +385,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script> const videoPlayer = document.getElementById('videoPlayer'); const videos = [ 'videos/How Machines Learn.mp4' ]; let currentVideo = 0; 
+			function playNextVideo() { videoPlayer.src = videos[currentVideo]; videoPlayer.play(); currentVideo = (currentVideo + 1) % videos.length; } 
+			videoPlayer.addEventListener('ended', playNextVideo); // Start the slideshow 
+			playNextVideo(); </script>
 	</body>
 </html>
