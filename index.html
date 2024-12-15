@@ -23,10 +23,13 @@
 							<p class="major">Welcome! My name is Joseph Opeyemi Boye. I am a seasoned software engineer with a passion for crafting solutions that merge technology with real-world challenges. I have a solid foundation in Information Technology and a wealth of hands-on experience in data analytics. My expertise spans a wide array of programming languages (Python, C#, HTML, SQL), frameworks (ASP.NET, ADO.NET, AngularJS), and methodologies, allowing me to architect robust and scalable applications. I am committed to delivering high-quality, efficient, and elegant software solutions. Additionally, I am eager to understand the financial world as it integrates value and products into the blockchain and web3, exploring the transformative potential of these technologies.
 							</p>
 							<img src="images/businessprofilepic.png" alt="Profile Picture" height="250" />
-							<ul class="actions stacked">
-								<li><a href="https://docs.google.com/document/d/1T0qVTNEeirbQ-KwZ8NomO5zpnKR0NcrB/edit?usp=sharing&ouid=111525859312612120827&rtpof=true&sd=true" class="button big wide smooth-scroll-middle" target="_blank">See Resume</a></li>
-								<div id="slideshow" > <video id="videoPlayer" controls></video> </div>
-							</ul>
+							
+							<a href="https://docs.google.com/document/d/18OUPrrhfh9wiFLY213ZKvizZBm9JIj4e/edit?usp=sharing&ouid=111525859312612120827&rtpof=true&sd=true" class="button big wide smooth-scroll-middle" target="_blank">See Resume</a>
+							<div id="slideshow" > 
+							<video id="videoPlayer">
+							<source src ="videos/How Machines Learn.mp4" type="video/mp4"></video> 
+							</div>
+							
 						</div>
 						
 					</section>
@@ -35,7 +38,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Chatbot</h2>
-							<p>A chatbot created with python using machine learning to form possible outputs for inputs given. </p>
+							<p>A chatbot developed in Python that leverages machine learning to generate appropriate responses based on given inputs. </p>
 							<ul class="actions stacked">
 								<li><a href="https://github.com/t4tle/chatbot-model/tree/main" class="button" target="_blank">Github page</a></li>
 							</ul>
@@ -389,5 +392,6 @@
 			function playNextVideo() { videoPlayer.src = videos[currentVideo]; videoPlayer.play(); currentVideo = (currentVideo + 1) % videos.length; } 
 			videoPlayer.addEventListener('ended', playNextVideo); // Start the slideshow 
 			playNextVideo(); </script>
+			<script>document.querySelector('video').pause();</script>
 	</body>
 </html>
