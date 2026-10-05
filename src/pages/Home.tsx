@@ -25,6 +25,11 @@ export default function Home() {
           <h1>
             Joseph Boye
           </h1>
+          <img
+            src="/images/businessprofilepic.png"
+            alt="Joseph Boye"
+            className="profile-image"
+            />
 
           <p className="hero-description">
             I build data-driven applications and
