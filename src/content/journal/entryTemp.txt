@@ -1,0 +1,28 @@
+---
+slug: 
+title: 
+category: general
+date: 2026-10-03
+
+excerpt: >
+  light synopsisi
+
+tags:
+  - software 
+  - 
+
+audio:
+video:
+youtube:
+
+relatedProjects:
+  - 
+
+relatedEntries:
+  -
+---
+
+# title
+
+
+## header
